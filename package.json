@@ -1,0 +1,20 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Core Packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "author": "Faisal Abdul Hamid<faisal.abdulhamid@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/pg": "^8.6.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}
