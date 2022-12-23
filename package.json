@@ -1,13 +1,17 @@
 {
-  "name": "core",
+  "name": "@trycqtxh/core",
   "version": "1.0.0",
   "description": "Core Packages",
+  "repository": "git://github.com/trycqtxh/core.git",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
   "author": "Faisal Abdul Hamid<faisal.abdulhamid@gmail.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/pg": "^8.6.5",
