@@ -1,23 +1,15 @@
 {
-  "compileOnSave": false,
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "target": "es2020",
-    "lib": ["es2020", "esnext.asynciterable"],
-    "baseUrl": "./src",
-    "removeComments": true,
-    "declaration": false,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "module": "CommonJS",
-    "pretty": true,
-    "sourceMap": false,
-    "allowJs": false,
-    "noEmit": false,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "strictNullChecks": true
+    "outDir": "./dist",
+    "declaration": true,
+    "allowJs": true,
+    "useDefineForClassFields": true,
+    "esModuleInterop": false
   },
-  "include": ["./src/**/*.ts", "./src/*.ts"],
+  "ts-node": {
+    "files": true
+  },
+  "include": ["./index.ts"],
   "exclude": ["node_modules", "dist"]
 }

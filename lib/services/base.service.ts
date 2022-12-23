@@ -27,7 +27,8 @@ export type IBaseEntityEav<Entity, EavEntity> = Entity & WithEav<EavEntity>
 export abstract class BaseServiceWithEav<Entity, EavEntity, Repository> extends BaseService<IBaseEntityEav<Entity, EavEntity>, Repository> {
 
   public _repository: IBaseRepository<Entity>;
-  public repository: IBaseRepository<IBaseEntityEav<Entity, EavEntity>>;
+  // public repository: IBaseRepository<IBaseEntityEav<Entity, EavEntity>>;
+
   constructor({ pool, repository, _repository } : { pool: Pool, repository: IBaseRepository<IBaseEntityEav<Entity, EavEntity>>, _repository: IBaseRepository<Entity> }) {
     super({
       pool,

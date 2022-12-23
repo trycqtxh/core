@@ -7,7 +7,7 @@ import {
   AnyObject,
 } from './types'
 import { query, queryRow } from './utils'
-import { PrimaryKey } from 'types'
+import { PrimaryKey } from '../types'
 
 export class BaseModel<T extends AnyObject> implements IBaseModel<T, PoolClient> {
   readonly table: string

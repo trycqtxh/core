@@ -1,10 +1,16 @@
 {
   "name": "@trycqtxh/core",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Core Packages",
-  "repository": "git://github.com/trycqtxh/core.git",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trycqtxh/core.git"
+  },
+  "scripts": {
+    "build" : "tsc"
+  },
   "files": [
     "/dist"
   ],

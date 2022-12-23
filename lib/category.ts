@@ -1,9 +1,9 @@
 import { Pool, PoolClient } from 'pg'
-import { BaseModel, IBaseModel } from "models";
-import { BaseRepository, IBaseRepository } from 'repositories/base.repository';
-import { PrimaryKey } from 'types';
+import { BaseModel, IBaseModel } from "./models";
+import { BaseRepository, IBaseRepository } from './repositories/base.repository';
+import { PrimaryKey } from './types';
 import { pool } from './config';
-import { BaseService, BaseServiceWithEav, IBaseEntityEav, IBaseService } from 'services/base.service';
+import { BaseService, BaseServiceWithEav, IBaseEntityEav, IBaseService } from './services/base.service';
 
 /** eav */
 interface EavEntity {
